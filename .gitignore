@@ -1,3 +1,6 @@
 lib/
 out/
 cache/
+.env
+broadcast/
+.verify/
