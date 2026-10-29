@@ -1,0 +1,27 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+script = "script"
+
+# The settings every contract here was deployed and verified with.
+solc = "0.8.35"
+evm_version = "cancun"
+optimizer = true
+via_ir = true
+optimizer_runs = 1000000
+
+# Robinhood Chain (Arbitrum Orbit) caps runtime code at 96 KB, not EIP-170's 24,576 bytes.
+code_size_limit = 98304
+
+# MaidMarianLaunchCurve.t.sol reads script/curve-vectors.json.
+fs_permissions = [{ access = "read", path = "./script" }]
+
+[fmt]
+line_length = 200
+tab_width = 4
+bracket_spacing = true
+
+[rpc_endpoints]
+hood = "https://rpc.mainnet.chain.robinhood.com"
