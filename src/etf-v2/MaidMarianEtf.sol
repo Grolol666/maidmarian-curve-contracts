@@ -127,7 +127,7 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
 
     // ------------------------------------------------------------ constants ---
 
-    /// The most legs an ETF can hold. The storage arrays are sized to it.
+    /// The most legs an ETF can hold (etf2.md, 2026-10-16). The storage arrays are sized to it.
     uint256 public constant MAX_LEGS = 10;
 
     /// The least USDG (6 decimals) the first mint routes to each leg: 1 USDG (security review
@@ -146,8 +146,8 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
     // ---------------------------------------------------------------- types ---
 
     /**
-     * One leg as given to the constructor, with its price channel - part of the ETF, as its name and
-     * its symbol are:
+     * One leg as given to the constructor, with its price channel (etf2.md lot B; author,
+     * 2026-10-16: "Feed et TWAP, c'est une info de l'ETF, comme son nom, son symbole"):
      *  - `feed` alone: the leg is priced by that Chainlink feed (m7m's channel);
      *  - `pool` alone: a TWAP leg, priced by the 30-minute TWAP of that token/USDG Uniswap V3
      *    pool, which must be the Uniswap V3 factory's pool of the pair at its fee, be
@@ -164,7 +164,7 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
     }
 
     /**
-     * What the deployer chooses besides the legs: every constant of m7m, each
+     * What the deployer chooses besides the legs (etf2.md lot C): every constant of m7m, each
      * checked against its bounds in the constructor (`ParamOutOfBounds(name)`) and then
      * immutable. m7m's value and the bounds, in that order:
      *  - `entryFeeBps` (10; 0 - 100): of `usdgIn` in USDG on `mint`, of the shares on
@@ -192,7 +192,7 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
      *    channel (the feed, or the TWAP) less this (author, 2026-10-17: 50 by default).
      *  - `mintFeedAge` (6 hours; 1 hour - 7 days): a mint needs every live feed's last round
      *    younger than this (review 2026-10-15, M8); a TWAP leg has no round and no age. Measured over 92 days to 2026-10-15
-     *    (m7m's seven feeds, sessions 13:30-20:00 UTC): the largest staleness in
+     *    (`.scratch/m7m/gaps.mjs`, m7m's seven, sessions 13:30-20:00 UTC): the largest staleness in
      *    a session is 5h53 (META) to 6h25 (AAPL); a mint is closed 58.2 % of session minutes at
      *    2 h, 22.3 % at 4 h, 4.2 % at 6 h, 2.8 % at 8 h. Not measured for any other feed.
      *  - `minInterval` (20 hours; 1 hour - 7 days): between two rebalances (author, 2026-10-15: so
@@ -202,7 +202,7 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
      *  - `feedNotice` (3 days; 0 - 14 days): `mint` stays closed this long after the owner
      *    replaces a dead feed (review 2026-10-15, M-a), so holders who distrust it leave first.
      *  - `poolDepthFloor` (none; at least 10 000 USDG, 6 decimals): how deep a leg's pool must be,
-     *    at construction and at every read, for the leg to be live: the USDG its
+     *    at construction and at every read, for the leg to be live (etf2.md lot B): the USDG its
      *    30-minute harmonic-mean in-range liquidity holds within 2 % of the TWAP on either side
      *    (`MaidMarianEtfPoolDepth`; security review 2026-10-17, second pass, B-1 / B-2: the
      *    pool's USDG balance, read until then, was lent or emptied for one call).
@@ -378,7 +378,7 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
     /**
      * One leg as stored. Its value is `rawBalance x answer / scale`, in USDG (6 decimals), with
      * `scale = 10^(feedDecimals + tokenDecimals - 6)`. A feed leg's `answer` is the feed's;
-     * Chainlink stock answers already include `uiMultiplier()` (ERC-8056). A
+     * Chainlink stock answers already include `uiMultiplier()` (ERC-8056, `doc/prices.md`). A
      * TWAP leg's is the pool's price of `scale` raw units, in USDG units, with `feedDecimals` set
      * to 18 - a price in 18 decimals, so the same formula values it; a pool trades raw units, so
      * its price is already per raw unit, as the feed's answer is, and `uiMultiplier()` is applied
@@ -431,8 +431,8 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
     /// pays the early penalty, falling linearly from `EARLY_EXIT_PENALTY_BPS`, on its minted shares.
     mapping(address holder => uint256) public heldSince;
 
-    /// The shares each address minted and still holds:
-    /// `+shares` at every mint to it - the doors' and the owner's
+    /// The shares each address minted and still holds (author, 2026-10-17, etf2.md lot C rule 2:
+    /// "c'est presque obligatoire"): `+shares` at every mint to it - the doors' and the owner's
     /// fees, which are shares the contract created, not shares bought on a pool; the exit fee the
     /// owner receives in shares counts likewise - `-min(mintedBy, amount)` on every transfer out,
     /// so a minter who sold on a pool cannot launder pool-bought shares under an old counter, and
@@ -605,7 +605,7 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
         });
     }
 
-    /// Every parameter against its bounds, by name.
+    /// Every parameter against the bounds of etf2.md lot C's table (author, 2026-10-17), by name.
     function _checkParams(Params memory p) private pure {
         _bound(p.entryFeeBps, 0, 100, "entryFeeBps");
         _bound(p.exitFeeBps, 0, 200, "exitFeeBps");
@@ -723,7 +723,7 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
         }
 
         if (supply == 0) {
-            // And at least 99 % of its target share of the net: the fund is born
+            // And at least 99 % of its target share of the net (etf2.md lot A): the fund is born
             // at its weights, whatever split the first minter chose.
             for (uint256 i = 0; i < n; i++) {
                 uint256 targetIn = Math.mulDiv(net, _legs[i].parts, TOTAL_PARTS);
@@ -1130,7 +1130,8 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
 
     /**
      * @notice Replace `leg`'s pool, only once it is dead - under `POOL_DEPTH_FLOOR` deep, or
-     * unable to answer a 30-minute TWAP. A pool that answers is never replaced, even one that
+     * unable to answer a 30-minute TWAP (etf2.md lot C rule 4: "`replaceFeed` / `replacePool` over
+     * a dead source, with the notice"). A pool that answers is never replaced, even one that
      * disagrees with its leg's feed (`PoolStillLive`): the owner cannot pick the price that
      * vouches for a feed. Dead is a state of the last 30 minutes, not of the call (security review
      * 2026-10-17, second pass, B-1: under the balance rule the owner emptied GLD's live pool for
@@ -1601,7 +1602,7 @@ contract MaidMarianEtf is ERC20, ReentrancyGuard, Ownable {
     }
 
     /**
-     * A mint's band rule: the fund re-read after the
+     * A mint's band rule (author, 2026-10-17, etf2.md lot C rule 4): the fund re-read after the
      * mint - each balance again, at the answers `before` read, so no feed is called twice - and
      * every live leg that `_due` finds out of band must have been out of band before, on the
      * same side, with a gap that did not grow as a share of `nav`: `gap / nav <= gapBefore /

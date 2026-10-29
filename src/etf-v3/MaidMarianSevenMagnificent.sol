@@ -86,10 +86,11 @@ contract MaidMarianSevenMagnificent is ERC20, ReentrancyGuard, Ownable {
 
     /// A mint needs every live feed's last round younger than this (security review 2026-10-15,
     /// M8: a stale feed made minting a one-way discount). Measured over 92 days to 2026-10-15
-    /// (every round of the seven on publicnode, sessions 13:30-20:00 UTC):
+    /// (`.scratch/m7m/gaps.mjs`, every round of the seven on publicnode, sessions 13:30-20:00 UTC):
     /// the largest staleness inside a session is 5h53 (META) to 6h25 (AAPL); the share of session
     /// minutes a mint would be closed is 58.2 % at 2 h, 22.3 % at 4 h, 4.2 % at 6 h, 2.8 % at 8 h.
-    /// 6 hours was chosen from that table.
+    /// 6 hours is the chef de projet's recommendation from that table; the author may change it
+    /// before deploy.
     uint256 public constant MINT_FEED_AGE = 6 hours;
 
     /// How long `mint` stays closed after the owner replaces a dead feed (second review pass,
@@ -187,7 +188,7 @@ contract MaidMarianSevenMagnificent is ERC20, ReentrancyGuard, Ownable {
 
     /// One leg as stored. Its value is `rawBalance x answer / scale`, in USDG (6 decimals), with
     /// `scale = 10^(feedDecimals + tokenDecimals - 6)`; Chainlink stock answers already include
-    /// `uiMultiplier()` (ERC-8056), so m7m never reads or applies it. A feed that
+    /// `uiMultiplier()` (ERC-8056, `doc/prices.md`), so m7m never reads or applies it. A feed that
     /// does not answer five words, answers <= 0, or has not written for `DEAD_FEED_AGE` is dead:
     /// its leg is not valued, not traded, not waited for. `token`, `tokenDecimals` and `scale` are
     /// write-once storage: written in

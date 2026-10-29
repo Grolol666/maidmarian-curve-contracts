@@ -12,7 +12,7 @@ import { CurveBase } from "./MaidMarianLaunchCurve.t.sol";
 /**
  * The curve's and the launcher's ways out when a leg's token refuses the transfer, and `sellAfterBond`'s
  * bounds, offline: the real launcher, curve, token, v4 factory and v4 ETF code (`_switchToV4`) over the
- * curve suite's mocks. A paused stock token (Robinhood's `Stock` carries `onlyNotPaused` /
+ * curve suite's mocks. A paused stock token (the chain's `Stock` carries `onlyNotPaused` /
  * `onlyNotBlocked`) is a `transfer` that reverts (`vm.mockCallRevert`). Proves the contracts against the
  * mocks; the deployed v4 and its real legs are `MaidMarianLauncherV2Fixes.fork.t.sol`.
  *

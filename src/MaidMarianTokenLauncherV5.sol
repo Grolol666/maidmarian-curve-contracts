@@ -19,6 +19,7 @@ import { checkTokenName, checkTokenSymbol, checkProfile, checkPngLogo, storeLogo
  * @notice A token on a bonding curve whose reserve is a basket of stock tokens (2 to 10, owner-listed).
  * Buy in USDG: the curve buys the stocks at spot. Sell: it sells your share of them at spot.
  * It bonds when its stocks are worth the target at their 30 min TWAP: one token / stock V4 pool per stock.
+ * Rules and reasons: launcher-v5.md.
  */
 contract MaidMarianTokenLauncherV5 is Ownable, ReentrancyGuard {
     using SafeERC20 for IERC20;

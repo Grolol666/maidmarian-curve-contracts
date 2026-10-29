@@ -882,7 +882,7 @@ contract MaidMarianLaunchCurveEtfTest is CurveBase {
         vm.prank(maker);
         vm.expectRevert(BadSymbol.selector);
         cf.launchWithEtf{ value: FEE }(
-            "Robin Coin", "ROBINHOOD", "", _noProfileC(), _legsAbc(), 200, 0, 8000e18, 0, 1_000_000_000, SEED_USDG, _seedRoutes(_legsAbc()), 1, new address[](0), 0, new Etf.Route[](0), 0
+            "Robin Coin", "SHERWOODS", "", _noProfileC(), _legsAbc(), 200, 0, 8000e18, 0, 1_000_000_000, SEED_USDG, _seedRoutes(_legsAbc()), 1, new address[](0), 0, new Etf.Route[](0), 0
         );
         vm.prank(maker);
         vm.expectRevert(BadLogo.selector);

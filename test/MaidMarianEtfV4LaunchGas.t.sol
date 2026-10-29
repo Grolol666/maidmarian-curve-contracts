@@ -146,8 +146,8 @@ contract MaidMarianEtfV4LaunchGasTest is CurveBase {
         _cool(l10, address(v4), address(v4.ETF_IMPLEMENTATION()));
         vm.prank(maker);
         uint256 g = gasleft();
-        cf.launchWithToken{ value: LAUNCH_FEE }(name64, "ROBINHOOD", logo, full, address(qt), SIM_THRESHOLD, 100, 1_000_000_000, QT_FIRST_BUY, exempt);
-        uint256 tokenCap = g - gasleft() + _intrinsic(abi.encodeCall(cf.launchWithToken, (name64, "ROBINHOOD", logo, full, address(qt), SIM_THRESHOLD, 100, 1_000_000_000, QT_FIRST_BUY, exempt)));
+        cf.launchWithToken{ value: LAUNCH_FEE }(name64, "SHERWOODS", logo, full, address(qt), SIM_THRESHOLD, 100, 1_000_000_000, QT_FIRST_BUY, exempt);
+        uint256 tokenCap = g - gasleft() + _intrinsic(abi.encodeCall(cf.launchWithToken, (name64, "SHERWOODS", logo, full, address(qt), SIM_THRESHOLD, 100, 1_000_000_000, QT_FIRST_BUY, exempt)));
 
         emit log_named_uint("launchWithEtf, v4, 10 legs, 10 KiB, full profile, no exemption", etfBare);
         emit log_named_uint("launchWithEtf, v4, 10 legs, 10 KiB, full profile, 10 exemptions", etfCap);
@@ -182,8 +182,8 @@ contract MaidMarianEtfV4LaunchGasTest is CurveBase {
         vm.cool(address(weth));
         vm.prank(maker);
         uint256 g = gasleft();
-        cf.launchWithToken{ value: LAUNCH_FEE + WETH_FIRST_BUY }(name64, "ROBINHOOD", logo, full, address(weth), 4.2e18, 100, 1_000_000_000, WETH_FIRST_BUY, exempt);
-        uint256 tokenEth = g - gasleft() + _intrinsic(abi.encodeCall(cf.launchWithToken, (name64, "ROBINHOOD", logo, full, address(weth), 4.2e18, 100, 1_000_000_000, WETH_FIRST_BUY, exempt)));
+        cf.launchWithToken{ value: LAUNCH_FEE + WETH_FIRST_BUY }(name64, "SHERWOODS", logo, full, address(weth), 4.2e18, 100, 1_000_000_000, WETH_FIRST_BUY, exempt);
+        uint256 tokenEth = g - gasleft() + _intrinsic(abi.encodeCall(cf.launchWithToken, (name64, "SHERWOODS", logo, full, address(weth), 4.2e18, 100, 1_000_000_000, WETH_FIRST_BUY, exempt)));
 
         emit log_named_uint("launchWithEtf, v4, 10 legs, 10 KiB, full profile, 10 exemptions, 10 USDG seed", etf10);
         emit log_named_uint("launchWithEtf, v4, 10 legs, 10 KiB, full profile, 10 exemptions, 1 000 USDG seed", etf1000);

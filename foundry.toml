@@ -12,7 +12,7 @@ optimizer = true
 via_ir = true
 optimizer_runs = 1000000
 
-# Robinhood Chain (Arbitrum Orbit) caps runtime code at 96 KB, not EIP-170's 24,576 bytes.
+# Chain 4663 (Arbitrum Orbit) caps runtime code at 96 KB, not EIP-170's 24,576 bytes.
 code_size_limit = 98304
 
 # MaidMarianLaunchCurve.t.sol reads script/curve-vectors.json.
@@ -22,6 +22,3 @@ fs_permissions = [{ access = "read", path = "./script" }]
 line_length = 200
 tab_width = 4
 bracket_spacing = true
-
-[rpc_endpoints]
-hood = "https://rpc.mainnet.chain.robinhood.com"

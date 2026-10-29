@@ -121,7 +121,7 @@ contract UniswapPermit2Gate is ReentrancyGuard, Ownable {
 
         amountOut = _held(tokenOut) - before;
         if (amountOut < minOut) revert InsufficientOutput(amountOut, minOut);
-        if (amountOut > 0) _send(tokenOut, msg.sender, amountOut);
+        if (amountOut > 0) _send(tokenOut, msg.sender, amountOut);      //on peut recv des natives ???
 
         emit Swapped(msg.sender, tokenIn, tokenOut, amountIn, amountOut);
     }
