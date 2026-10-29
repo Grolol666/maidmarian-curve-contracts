@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+<title id="t">The bond</title>
+<desc id="d">When the reserve's 30 minute average value reaches the target, the curve bonds: 75 percent of the stocks open one pool per stock, 25 percent go to the protocol, and the tokens left over are placed in the pools above the opening price.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06110f"/><stop offset="1" stop-color="#0c2a2a"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#fcfcfc"/></marker>
+</defs>
+<rect width="760" height="380" rx="10" fill="url(#bg)"/>
+<g fill="none" stroke-width="2">
+<rect x="30" y="30" width="700" height="70" stroke="#3cbcfc"/>
+<rect x="30" y="170" width="440" height="80" stroke="#00e800"/>
+<rect x="520" y="170" width="210" height="80" stroke="#fcbc3c"/>
+<rect x="30" y="300" width="700" height="56" stroke="#fcfcfc"/>
+<path d="M250 100V170" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M625 100V170" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M250 250V300" stroke="#fcfcfc" marker-end="url(#ar)"/>
+</g>
+<g fill="#fcfcfc" text-anchor="middle">
+<text x="380" y="58" fill="#3cbcfc" font-weight="bold">RESERVE VALUE (30 minute average)  &gt;=  TARGET</text>
+<text x="380" y="82">in a trade, or when anyone presses BOND</text>
+<text x="250" y="200" fill="#00e800" font-weight="bold">75 %  of the stocks</text>
+<text x="250" y="222">one pool per stock, 1 % fee</text>
+<text x="250" y="240" font-size="12" fill="#7c7c7c">liquidity locked for good</text>
+<text x="625" y="200" fill="#fcbc3c" font-weight="bold">25 %  of the stocks</text>
+<text x="625" y="222">to the protocol</text>
+<text x="380" y="324">the tokens left over go into the pools above the opening price</text>
+<text x="380" y="344" font-size="12" fill="#7c7c7c">none is burned</text>
+</g>
+</svg>

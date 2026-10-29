@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="760" height="330" role="img" aria-labelledby="t d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+<title id="t">Selling on a v5 curve</title>
+<desc id="d">Your tokens go back to the curve, which sells your share of its stocks, takes the fees, and pays you in USDG.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06110f"/><stop offset="1" stop-color="#0c2a2a"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#fcfcfc"/></marker>
+</defs>
+<rect width="760" height="330" rx="10" fill="url(#bg)"/>
+<g fill="none" stroke-width="2">
+<rect x="30" y="130" width="130" height="70" stroke="#fcbc3c"/>
+<rect x="250" y="130" width="200" height="70" stroke="#3cbcfc"/>
+<rect x="250" y="40" width="200" height="60" stroke="#3cbcfc"/>
+<rect x="250" y="240" width="200" height="60" stroke="#00e800"/>
+<rect x="570" y="130" width="160" height="70" stroke="#fcbc3c"/>
+<path d="M160 165H250" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M350 100V130" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M450 165H570" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M350 200V240" stroke="#fcfcfc" marker-end="url(#ar)"/>
+</g>
+<g fill="#fcfcfc" text-anchor="middle">
+<text x="95" y="160" fill="#fcbc3c" font-weight="bold">YOU</text><text x="95" y="182">send the token</text>
+<text x="350" y="64" fill="#3cbcfc" font-weight="bold">RESERVE</text><text x="350" y="84">your share of each stock</text>
+<text x="350" y="160" fill="#3cbcfc" font-weight="bold">STOCKS SOLD</text><text x="350" y="182">at the market price</text>
+<text x="350" y="264" fill="#00e800" font-weight="bold">FEES</text><text x="350" y="284">0.75 % + creator tax</text>
+<text x="650" y="160" fill="#fcbc3c" font-weight="bold">YOU</text><text x="650" y="182">receive USDG</text>
+<text x="570" y="240" fill="#7c7c7c" font-size="12" text-anchor="start">a falling market pays less,</text>
+<text x="570" y="258" fill="#7c7c7c" font-size="12" text-anchor="start">a rising one pays more</text>
+</g>
+</svg>

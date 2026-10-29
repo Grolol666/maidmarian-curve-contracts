@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-labelledby="t d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+<title id="t">ETF is SEED against STOCKS are SEED</title>
+<desc id="d">Side by side: in ETF is SEED the reserve is shares of an ETF made with the token, which become one pool per stock at the bond; in STOCKS are SEED the reserve is the stocks themselves, which become one pool per stock at the bond.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06110f"/><stop offset="1" stop-color="#0c2a2a"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#fcfcfc"/></marker>
+</defs>
+<rect width="760" height="360" rx="10" fill="url(#bg)"/>
+<g fill="none" stroke-width="2">
+<rect x="20" y="20" width="340" height="320" stroke="#fcbc3c"/>
+<rect x="400" y="20" width="340" height="320" stroke="#00e800"/>
+<rect x="60" y="130" width="260" height="60" stroke="#fcbc3c"/>
+<rect x="60" y="250" width="260" height="60" stroke="#3cbcfc"/>
+<rect x="440" y="130" width="260" height="60" stroke="#00e800"/>
+<rect x="440" y="250" width="260" height="60" stroke="#3cbcfc"/>
+<path d="M190 190V250" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M570 190V250" stroke="#fcfcfc" marker-end="url(#ar)"/>
+</g>
+<g fill="#fcfcfc" text-anchor="middle">
+<text x="190" y="52" fill="#fcbc3c" font-weight="bold">ETF is SEED</text>
+<text x="190" y="76">the buyer's USDG</text>
+<text x="190" y="96">mints shares of an ETF</text>
+<text x="190" y="156" fill="#fcbc3c" font-weight="bold">RESERVE</text><text x="190" y="176">shares of the ETF</text>
+<text x="190" y="276" fill="#3cbcfc" font-weight="bold">AT THE BOND</text><text x="190" y="296">one pool per stock</text>
+<text x="570" y="52" fill="#00e800" font-weight="bold">STOCKS are SEED</text>
+<text x="570" y="76">the buyer's USDG</text>
+<text x="570" y="96">buys the stocks</text>
+<text x="570" y="156" fill="#00e800" font-weight="bold">RESERVE</text><text x="570" y="176">the stocks themselves</text>
+<text x="570" y="276" fill="#3cbcfc" font-weight="bold">AT THE BOND</text><text x="570" y="296">one pool per stock</text>
+</g>
+</svg>

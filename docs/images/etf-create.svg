@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-labelledby="t d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+<title id="t">Creating an ETF</title>
+<desc id="d">Six steps: logo, name and symbol, legs, fees, profile, create.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06110f"/><stop offset="1" stop-color="#0c2a2a"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#fcfcfc"/></marker>
+</defs>
+<rect width="760" height="300" rx="10" fill="url(#bg)"/>
+<g fill="none" stroke-width="2">
+<rect x="30" y="40" width="200" height="80" stroke="#3cbcfc"/>
+<rect x="280" y="40" width="200" height="80" stroke="#3cbcfc"/>
+<rect x="530" y="40" width="200" height="80" stroke="#3cbcfc"/>
+<rect x="30" y="170" width="200" height="80" stroke="#fcbc3c"/>
+<rect x="280" y="170" width="200" height="80" stroke="#fcbc3c"/>
+<rect x="530" y="170" width="200" height="80" stroke="#00e800"/>
+<path d="M230 80H280" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M480 80H530" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M630 120V145H130V170" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M230 210H280" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M480 210H530" stroke="#fcfcfc" marker-end="url(#ar)"/>
+</g>
+<g fill="#fcfcfc" text-anchor="middle">
+<text x="130" y="76" fill="#3cbcfc" font-weight="bold">1  LOGO</text><text x="130" y="98" font-size="12">optional, square</text>
+<text x="380" y="76" fill="#3cbcfc" font-weight="bold">2  NAME, SYMBOL</text><text x="380" y="98" font-size="12">64 characters, 11 letters</text>
+<text x="630" y="76" fill="#3cbcfc" font-weight="bold">3  LEGS</text><text x="630" y="98" font-size="12">1 to 10, 100 % in all</text>
+<text x="130" y="206" fill="#fcbc3c" font-weight="bold">4  FEES</text><text x="130" y="228" font-size="12">yours, fixed for life</text>
+<text x="380" y="206" fill="#fcbc3c" font-weight="bold">5  PROFILE</text><text x="380" y="228" font-size="12">optional</text>
+<text x="630" y="206" fill="#00e800" font-weight="bold">6  CREATE</text><text x="630" y="228" font-size="12">0.001 ETH, one transaction</text>
+</g>
+</svg>

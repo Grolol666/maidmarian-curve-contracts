@@ -4,6 +4,8 @@ Square Maid Marian is a launchpad using mainly a set of stock-token ETFs on chai
 
 Experimental software. These are not registered funds; nothing here is an offer or investment advice. Unaudited.
 
+How to use it, the fees, the reviews and the risks: [the documentation](docs/README.md).
+
 ## Contracts
 
 Every address below is verified on [the chain 4663 explorer](https://robin.etherscan.io).

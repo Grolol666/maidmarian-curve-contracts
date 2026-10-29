@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-labelledby="t d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+<title id="t">Buying and selling an ETF</title>
+<desc id="d">Buying: your USDG pays the entry fee, the rest buys the stocks at the basket weights, and you receive shares. Selling: your shares pay the exit fee, the fund sells the stocks for USDG or hands them to you, and you receive the result.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06110f"/><stop offset="1" stop-color="#0c2a2a"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#fcfcfc"/></marker>
+</defs>
+<rect width="760" height="340" rx="10" fill="url(#bg)"/>
+<g fill="none" stroke-width="2">
+<rect x="30" y="40" width="130" height="60" stroke="#fcbc3c"/>
+<rect x="250" y="40" width="200" height="60" stroke="#3cbcfc"/>
+<rect x="570" y="40" width="160" height="60" stroke="#fcbc3c"/>
+<rect x="30" y="200" width="130" height="60" stroke="#fcbc3c"/>
+<rect x="250" y="200" width="200" height="60" stroke="#3cbcfc"/>
+<rect x="570" y="200" width="160" height="60" stroke="#fcbc3c"/>
+<path d="M160 70H250" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M450 70H570" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M160 230H250" stroke="#fcfcfc" marker-end="url(#ar)"/>
+<path d="M450 230H570" stroke="#fcfcfc" marker-end="url(#ar)"/>
+</g>
+<g fill="#fcfcfc" text-anchor="middle">
+<text x="380" y="24" fill="#00e800" font-weight="bold">BUY</text>
+<text x="95" y="66" fill="#fcbc3c" font-weight="bold">YOU</text><text x="95" y="86">pay USDG</text>
+<text x="350" y="66" fill="#3cbcfc" font-weight="bold">STOCKS BOUGHT</text><text x="350" y="86">at the target percents</text>
+<text x="650" y="66" fill="#fcbc3c" font-weight="bold">YOU</text><text x="650" y="86">receive shares</text>
+<text x="305" y="124" fill="#7c7c7c" font-size="12">entry fee, set by the creator, taken from your USDG</text>
+<text x="380" y="184" fill="#f83800" font-weight="bold">SELL</text>
+<text x="95" y="226" fill="#fcbc3c" font-weight="bold">YOU</text><text x="95" y="246">send shares</text>
+<text x="350" y="226" fill="#3cbcfc" font-weight="bold">STOCKS SOLD</text><text x="350" y="246">or handed to you as they are</text>
+<text x="650" y="226" fill="#fcbc3c" font-weight="bold">YOU</text><text x="650" y="246">receive USDG or stocks</text>
+<text x="380" y="290" fill="#7c7c7c" font-size="12">exit fee, set by the creator, taken from your shares</text>
+<text x="380" y="316" fill="#7c7c7c" font-size="12">hold period and penalties apply as set at creation</text>
+</g>
+</svg>

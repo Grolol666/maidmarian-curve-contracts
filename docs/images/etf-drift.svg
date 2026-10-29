@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-labelledby="t d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+<title id="t">Drift</title>
+<desc id="d">Three stocks with targets of 50, 30 and 20 percent. After the market moves, the first stock rises to 58 percent and leaves its band, the second stays inside, the third falls to 14 percent and leaves its band.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06110f"/><stop offset="1" stop-color="#0c2a2a"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#fcfcfc"/></marker>
+</defs>
+<rect width="760" height="340" rx="10" fill="url(#bg)"/>
+<g fill="#fcfcfc" text-anchor="middle">
+<text x="380" y="30" fill="#3cbcfc" font-weight="bold">EACH STOCK HAS A TARGET AND A BAND AROUND IT</text>
+<text x="70" y="86" text-anchor="end">STOCK A</text>
+<text x="70" y="166" text-anchor="end">STOCK B</text>
+<text x="70" y="246" text-anchor="end">STOCK C</text>
+<text x="560" y="86" fill="#f83800" font-weight="bold">58 %  out</text>
+<text x="560" y="166" fill="#00e800" font-weight="bold">31 %  in</text>
+<text x="560" y="246" fill="#f83800" font-weight="bold">14 %  out</text>
+</g>
+<g fill="none" stroke-width="2">
+<path d="M100 60V280" stroke="#7c7c7c"/>
+<rect x="330" y="64" width="40" height="30" stroke="#fcbc3c" stroke-dasharray="4 3"/>
+<rect x="230" y="144" width="40" height="30" stroke="#fcbc3c" stroke-dasharray="4 3"/>
+<rect x="180" y="224" width="40" height="30" stroke="#fcbc3c" stroke-dasharray="4 3"/>
+</g>
+<g stroke="none">
+<rect x="100" y="70" width="290" height="18" fill="#f83800"/>
+<rect x="100" y="150" width="155" height="18" fill="#00e800"/>
+<rect x="100" y="230" width="70" height="18" fill="#f83800"/>
+</g>
+<g fill="none" stroke="#fcfcfc" stroke-width="2">
+<path d="M350 56V102"/><path d="M250 136V182"/><path d="M200 216V262"/>
+</g>
+<g fill="#7c7c7c" font-size="12" text-anchor="middle">
+<text x="350" y="118">target 50 %</text>
+<text x="250" y="198">target 30 %</text>
+<text x="200" y="278">target 20 %</text>
+<text x="380" y="316">dashed box: the rebalance band the creator chose. Outside it, a stock can be traded back.</text>
+</g>
+</svg>
