@@ -1,3 +1,5 @@
+<p align="center"><img src="images/maid-marian.png" alt="Maid Marian" width="120"></p>
+
 # Square Maid Marian
 
 **EVERY BUY BUYS STOCKS.**
