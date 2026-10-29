@@ -1,6 +1,6 @@
 # Square Maid Marian contracts
 
-Square Maid Marian is a launchpad and a set of stock-token ETFs on chain 4663 ([explorer](https://robin.etherscan.io)). This repository holds the source of every contract its pages call.
+Square Maid Marian is a launchpad using mainly a set of stock-token ETFs on chain 4663 ([explorer](https://robin.etherscan.io)). This repository holds the source of every contract its pages call.
 
 Experimental software. These are not registered funds; nothing here is an offer or investment advice. Unaudited.
 
