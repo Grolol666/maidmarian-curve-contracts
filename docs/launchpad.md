@@ -141,6 +141,6 @@ On a curve's page, with your wallet connected, the header shows a **1-click** sw
 - **Turn it on**: you approve once. Then every buy and sell is a single signature, with no approval each time.
 - **Turn it off**: the approval is revoked.
 
-The contracts, their reviews and the risks are on the [Safety](safety.md) page.
+The contracts and the risks are on the [Safety](safety.md) page.
 
 *Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*

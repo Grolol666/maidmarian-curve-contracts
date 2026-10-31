@@ -1,6 +1,6 @@
 # Safety
 
-The contracts square uses, where to read their source, what was reviewed, what everything costs, and what can go wrong.
+The contracts square uses, where to read their source, what everything costs, and what can go wrong.
 
 ## The contracts
 
@@ -24,30 +24,6 @@ Earlier launchers keep the curves they made and are listed, with the ETFs of the
 ### How anyone checks the source
 
 The repository states the compiler settings every contract was built with: the same compiler, the same optimizer settings, the same libraries pinned by a lock file. Build a contract with them and its code, down to the metadata hash, matches byte for byte what is deployed at its address. The explorer's "verified" mark says the same.
-
-## Reviews
-
-These are **internal reviews**, written by a reviewer who did not write the code. They are not a third-party audit. Each one ran the contracts' tests and wrote its own proofs.
-
-**STOCKS are SEED**
-
-- **F1, high: fixed.** A first buy split off the basket's weights could open the pools far apart in price and let an arbitrageur take stock from the holders' pools. The first buy now always follows the weights.
-- **F2, medium: fixed.** The first buy's slippage floor guarded nothing, so a launch could be sandwiched. The first buy is now counted from what it really got.
-- **F3, medium: accepted.** If a stock's price is pushed and held for 30 minutes, a curve can bond early and open that stock's pool off price. It takes a thin pool, no one correcting it for half an hour, and a lot of money. Blocking it would also block honest bonds after a real market move, so it stays, and it is told here.
-- **F4, low: noted.** When a stock is off its 30 minute average, a buy can get slightly less than its USDG's worth of the basket, never more. The difference stays with the holders.
-
-A final pass over the whole of the code confirmed F1 and F2 closed.
-
-**ETF is SEED**
-
-- One medium finding: the 30 minute average of one stock, pushed and held, could skew the pools opened at the bond. The share of each pool is now kept within a band around its stock's weight.
-- Three low findings, accepted: a stock whose price does not fit a pool at the bond loses its pool; a bond with ETF-in-ETF legs can cost more gas than a wallet simulates; a sell-only rebalance can move a little value at the bond.
-- Earlier reviews of the curve found a way to block a bond for a dust amount, closed by the hook.
-
-**ETFs**
-
-- No high or medium finding. The ETF keeps its own count of what it holds, so a gift sent to it moves no one's share. A holder can always leave in kind, whatever happens to one stock, its pool or its hook.
-- Low findings, edge cases: a hook run by someone else could take up to 0.5 % of a rebalance trade; a stock that rebases would break a count (no stock token on the chain does); a mint can fail until a sale left in the fund is used.
 
 ## Fees
 
