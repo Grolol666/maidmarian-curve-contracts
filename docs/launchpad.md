@@ -17,6 +17,8 @@ Each card shows the token's name, its symbol, its price in USDG and a bar: how f
 
 Click a card to open the curve. **LAUNCH A TOKEN** (top of the page) starts a new one.
 
+Open it: [square.ilk.finance/launchpad](https://square.ilk.finance/launchpad)
+
 ## A curve
 
 - **The bar** at the top: BOND, how far the curve is from its target. At 100 % it reads BONDED.
@@ -50,6 +52,8 @@ Open **LAUNCH A TOKEN** and keep **ETF is SEED** picked. The page is numbered 1 
 
 Launching costs 0.001 ETH, plus your first buy, which mints the first shares of your ETF.
 
+Open it: [square.ilk.finance/launchpad/create](https://square.ilk.finance/launchpad/create)
+
 ### Tutorial: buy, sell, claim
 
 1. Open a curve from the list.
@@ -57,6 +61,8 @@ Launching costs 0.001 ETH, plus your first buy, which mints the first shares of 
 3. **Buy**: type the amount in USDG, check the **slippage**, press the button.
 4. **Sell**: open the **Sell** tab, type the amount, press the button.
 5. **Claim**: if you have fees to claim, a **Claim** tab shows up next to Trades and Holders. Press **CLAIM**.
+
+Open it: [square.ilk.finance/launchpad](https://square.ilk.finance/launchpad)
 
 # Mode 2: STOCKS are SEED
 
@@ -114,6 +120,8 @@ Press **CONNECT**, then **LAUNCH IT**. Launching costs 0.0005 ETH, plus your fir
 
 The first buy has a **slippage floor**. The page tries the launch first, sees how many tokens your first buy gives, and signs the least it may give: that amount less your slippage (0.5 % unless you changed it on a curve page; from 0.01 % to 50 %). If the first buy would give less, the launch does not go through. If the simulation shows nothing, nothing is sent.
 
+Open it: [square.ilk.finance/launchpad/create](https://square.ilk.finance/launchpad/create)
+
 ## Tutorial: buy, sell, claim
 
 1. Open a curve from the list.
@@ -124,6 +132,8 @@ The first buy has a **slippage floor**. The page tries the launch first, sees ho
 6. **Claim**: if you have fees to claim, a **Claim** tab shows up next to Trades and Holders. Press the **CLAIM** button.
 7. After the bond, the **Pool** menu picks where a swap goes: Auto, or one stock's pool.
 
+Open it: [square.ilk.finance/launchpad](https://square.ilk.finance/launchpad)
+
 ## 1-click
 
 On a curve's page, with your wallet connected, the header shows a **1-click** switch.
@@ -133,4 +143,4 @@ On a curve's page, with your wallet connected, the header shows a **1-click** sw
 
 The contracts, their reviews and the risks are on the [Safety](safety.md) page.
 
-*Experimental software. These are not registered funds; nothing here is an offer or investment advice. Unaudited.*
+*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*

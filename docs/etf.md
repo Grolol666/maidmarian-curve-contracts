@@ -13,6 +13,8 @@ Two families:
 
 Filter with **all**, **session** or **24/7**. Each card shows the ETF's symbol and name, its entry, exit and management fees, its hold time and early exit, its NAV / share and its TVL. Press **Open**.
 
+Open it: [square.ilk.finance/etf](https://square.ilk.finance/etf)
+
 ## An ETF
 
 - **Buy** and **Sell**: type an amount and press the button. Without a wallet it reads "connect a wallet".
@@ -20,6 +22,8 @@ Filter with **all**, **session** or **24/7**. Each card shows the ETF's symbol a
 - **NAV**, **NAV per share**, **Supply**.
 - **Your account**: what you paid in, your average price, your shares, their value now and your PnL. **Exit now** shows the exit fee that would apply to you today.
 - **REBALANCE**: see below.
+
+Open it: [square.ilk.finance/etf/m7m](https://square.ilk.finance/etf/m7m)
 
 ## Rebalance
 
@@ -57,4 +61,6 @@ Press **Create your own ETF** at the top of the list.
 
 The stocks, the percents and the settings are fixed for life. Nobody can change them. You receive the fees.
 
-*Experimental software. These are not registered funds; nothing here is an offer or investment advice. Unaudited.*
+Open it: [square.ilk.finance/etf/create](https://square.ilk.finance/etf/create)
+
+*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*

@@ -71,4 +71,6 @@ A final pass over the whole of the code confirmed F1 and F2 closed.
 - **Smart-contract risk.** The contracts are new, internally reviewed, and not audited by a third party. A bug can lose funds. Only put in what you can lose.
 - **The chain itself.** Everything runs on chain 4663. If the chain, its bridge, its data feeds or the exchanges your pools rely on fail or change, the contracts cannot work around it. Stock tokens depend on their issuer.
 
-*Experimental software. These are not registered funds; nothing here is an offer or investment advice. Unaudited.*
+Open it: [square.ilk.finance/terms](https://square.ilk.finance/terms)
+
+*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*
