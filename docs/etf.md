@@ -1,21 +1,21 @@
-# ETFs
+# Baskets
 
 Baskets of stock tokens, one token each. The basket keeps its percents by itself.
 
-![Buying and selling an ETF: USDG pays the entry fee and buys the stocks, you receive shares; shares pay the exit fee and the stocks are sold or handed to you.](images/etf-mint-redeem.svg)
+![Buying and selling a Basket: USDG pays the entry fee and buys the stocks, you receive shares; shares pay the exit fee and the stocks are sold or handed to you.](images/etf-mint-redeem.svg)
 
 ## The list
 
 Two families:
 
 - **session**: mints during the New York session, on Chainlink feeds.
-- **24/7**: every leg priced by its Uniswap pool, never closed. An ETF created on the site is always 24/7.
+- **24/7**: every leg priced by its Uniswap pool, never closed. A Basket created on the site is always 24/7.
 
-Filter with **all**, **session** or **24/7**. Each card shows the ETF's symbol and name, its entry, exit and management fees, its hold time and early exit, its NAV / share and its TVL. Press **Open**.
+Filter with **all**, **session** or **24/7**. Each card shows the Basket's symbol and name, its entry, exit and management fees, its hold time and early exit, its NAV / share and its TVL. Press **Open**.
 
-Open it: [square.ilk.finance/etf](https://square.ilk.finance/etf)
+Open it: [square.ilk.finance/basket](https://square.ilk.finance/basket)
 
-## An ETF
+## A Basket
 
 - **Buy** and **Sell**: type an amount and press the button. Without a wallet it reads "connect a wallet".
 - **The chart** and the **legs table**: quantity, price, value and P&L of each stock.
@@ -23,7 +23,7 @@ Open it: [square.ilk.finance/etf](https://square.ilk.finance/etf)
 - **Your account**: what you paid in, your average price, your shares, their value now and your PnL. **Exit now** shows the exit fee that would apply to you today.
 - **REBALANCE**: see below.
 
-Open it: [square.ilk.finance/etf/m7m](https://square.ilk.finance/etf/m7m)
+Open it: [square.ilk.finance/basket/m7m](https://square.ilk.finance/basket/m7m)
 
 ## Rebalance
 
@@ -46,9 +46,9 @@ Open it: [square.ilk.finance/etf/m7m](https://square.ilk.finance/etf/m7m)
 
 **What it never does.** It never changes the stocks or the percents: they are fixed for life. It never touches anyone's shares: nobody is sold out or credited.
 
-## Tutorial: create an ETF
+## Tutorial: create a Basket
 
-Press **Create your own ETF** at the top of the list.
+Press **Create your own Basket** at the top of the list.
 
 ![The six steps of the create page: logo, name and symbol, legs, fees, profile, create.](images/etf-create.svg)
 
@@ -61,6 +61,6 @@ Press **Create your own ETF** at the top of the list.
 
 The stocks, the percents and the settings are fixed for life. Nobody can change them. You receive the fees.
 
-Open it: [square.ilk.finance/etf/create](https://square.ilk.finance/etf/create)
+Open it: [square.ilk.finance/basket/create](https://square.ilk.finance/basket/create)
 
 *Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*

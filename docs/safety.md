@@ -11,15 +11,15 @@ All of them are on chain 4663 and verified on [the explorer](https://robin.ether
 | Launcher, STOCKS are SEED | [`0x23A46e99356E5f11c0f2605733Ebdba7569b1b30`](https://robin.etherscan.io/address/0x23A46e99356E5f11c0f2605733Ebdba7569b1b30#code) ([source](../src/MaidMarianTokenLauncherV5.sol)) | Launches a token whose curve holds 2 to 10 stock tokens directly |
 | Curve, STOCKS are SEED | [`0xd4034Fa8f669a5Aa9583720d5105c95fD559096b`](https://robin.etherscan.io/address/0xd4034Fa8f669a5Aa9583720d5105c95fD559096b#code) ([source](../src/MaidMarianLaunchCurveV5.sol)) | The curve every launch copies: buys, sells, bonds into pools |
 | Hook, STOCKS are SEED | [`0x06dAEb519C54F8448644fA88e8e34f0E432dE000`](https://robin.etherscan.io/address/0x06dAEb519C54F8448644fA88e8e34f0E432dE000#code) ([source](../src/MaidMarianLaunchHook.sol)) | Lets only the curve open its own bond pools |
-| Launcher, ETF is SEED | [`0x041FdB47373b9f620FC0c8B3B37Df3A87c39B17d`](https://robin.etherscan.io/address/0x041FdB47373b9f620FC0c8B3B37Df3A87c39B17d#code) ([source](../src/launcher-v4/MaidMarianTokenLauncher.sol)) | Launches a token backed by an ETF made with it |
-| Curve, ETF is SEED | [`0xa5151D6d98DB2E346238A079c8e3AcF72d56cB56`](https://robin.etherscan.io/address/0xa5151D6d98DB2E346238A079c8e3AcF72d56cB56#code) ([source](../src/launcher-v4/MaidMarianLaunchCurve.sol)) | The curve every launch copies |
-| Hook, ETF is SEED | [`0xCF2a336984d45Ac8eb2e5aA545284833Ee93e000`](https://robin.etherscan.io/address/0xCF2a336984d45Ac8eb2e5aA545284833Ee93e000#code) ([source](../src/launcher-v4/MaidMarianLaunchHook.sol)) | Lets only the curve open its own bond pools |
-| ETF factory | [`0x1854fB4dE64515d8050e7B48D8d8Af2aBac67AAA`](https://robin.etherscan.io/address/0x1854fB4dE64515d8050e7B48D8d8Af2aBac67AAA#code) ([source](../src/etf-v4/MaidMarianEtfFactoryV4.sol)) | Anyone creates an ETF of 1 to 10 listed tokens |
-| ETF | [`0x2d506E246fCcE5A2f379835FC60B04F716FC4872`](https://robin.etherscan.io/address/0x2d506E246fCcE5A2f379835FC60B04F716FC4872#code) ([source](../src/MaidMarianEtfV4.sol)) | The ETF every factory ETF copies: mint, redeem, rebalance |
-| Previous ETF factory | [`0xC70c7C3259497E195d76a290601a4650E02090Eb`](https://robin.etherscan.io/address/0xC70c7C3259497E195d76a290601a4650E02090Eb#code) ([source](../src/etf-v3/MaidMarianEtfFactory.sol)) | Its ETFs stay listed and tradable |
+| Launcher, BASKET is SEED | [`0x041FdB47373b9f620FC0c8B3B37Df3A87c39B17d`](https://robin.etherscan.io/address/0x041FdB47373b9f620FC0c8B3B37Df3A87c39B17d#code) ([source](../src/launcher-v4/MaidMarianTokenLauncher.sol)) | Launches a token backed by a Basket made with it |
+| Curve, BASKET is SEED | [`0xa5151D6d98DB2E346238A079c8e3AcF72d56cB56`](https://robin.etherscan.io/address/0xa5151D6d98DB2E346238A079c8e3AcF72d56cB56#code) ([source](../src/launcher-v4/MaidMarianLaunchCurve.sol)) | The curve every launch copies |
+| Hook, BASKET is SEED | [`0xCF2a336984d45Ac8eb2e5aA545284833Ee93e000`](https://robin.etherscan.io/address/0xCF2a336984d45Ac8eb2e5aA545284833Ee93e000#code) ([source](../src/launcher-v4/MaidMarianLaunchHook.sol)) | Lets only the curve open its own bond pools |
+| Basket factory | [`0x1854fB4dE64515d8050e7B48D8d8Af2aBac67AAA`](https://robin.etherscan.io/address/0x1854fB4dE64515d8050e7B48D8d8Af2aBac67AAA#code) ([source](../src/etf-v4/MaidMarianEtfFactoryV4.sol)) | Anyone creates a Basket of 1 to 10 listed tokens |
+| Basket | [`0x2d506E246fCcE5A2f379835FC60B04F716FC4872`](https://robin.etherscan.io/address/0x2d506E246fCcE5A2f379835FC60B04F716FC4872#code) ([source](../src/MaidMarianEtfV4.sol)) | The Basket every factory Basket copies: mint, redeem, rebalance |
+| Previous Basket factory | [`0xC70c7C3259497E195d76a290601a4650E02090Eb`](https://robin.etherscan.io/address/0xC70c7C3259497E195d76a290601a4650E02090Eb#code) ([source](../src/etf-v3/MaidMarianEtfFactory.sol)) | Its Baskets stay listed and tradable |
 | Permit2 gate | [`0x67162DE03B31F9be637D9dDc216f3163E44BeE5a`](https://robin.etherscan.io/address/0x67162DE03B31F9be637D9dDc216f3163E44BeE5a#code) ([source](../src/UniswapPermit2Gate.sol)) | Pays a Uniswap route with a plain approval |
 
-Earlier launchers keep the curves they made and are listed, with the ETFs of the collection, in the repository's README.
+Earlier launchers keep the curves they made and are listed, with the Baskets of the collection, in the repository's README.
 
 ### How anyone checks the source
 
@@ -29,16 +29,16 @@ The repository states the compiler settings every contract was built with: the s
 
 | What | How much | Who gets it |
 |---|---|---|
-| Launch a token | 0.0005 ETH (ETF is SEED: 0.001 ETH to create its ETF) | Protocol |
+| Launch a token | 0.0005 ETH (BASKET is SEED: 0.001 ETH to create its Basket) | Protocol |
 | Trade on a curve | 0.75 % | 70 % creator, 30 % protocol |
 | Creator tax | 0 to 10 %, the creator's pick, fixed at the launch | Creator |
-| Snipe tax | First 5 seconds of a STOCKS are SEED curve (3 in ETF is SEED), falling to nothing | 70 % creator, 30 % protocol |
+| Snipe tax | First 5 seconds of a STOCKS are SEED curve (3 in BASKET is SEED), falling to nothing | 70 % creator, 30 % protocol |
 | The bond, STOCKS are SEED | 75 % of the stocks open the pools, 25 % to the protocol | Pools / protocol |
-| The bond, ETF is SEED | 70 % opens a pool, 30 % to the protocol | Pool / protocol |
+| The bond, BASKET is SEED | 70 % opens a pool, 30 % to the protocol | Pool / protocol |
 | Pool fees after the bond (STOCKS are SEED) | 1 % per swap | 70 % creator, 30 % protocol |
-| ETF entry and exit fees | 0 to 5 % each, the creator's pick (0.10 % at least on entry) | 70 % creator, 30 % protocol |
-| ETF hold period and penalties | Set by the creator | 70 % creator, 30 % protocol |
-| ETF management fee | 0.50 % a year | 0.30 creator, 0.20 protocol |
+| Basket entry and exit fees | 0 to 5 % each, the creator's pick (0.10 % at least on entry) | 70 % creator, 30 % protocol |
+| Basket hold period and penalties | Set by the creator | 70 % creator, 30 % protocol |
+| Basket management fee | 0.50 % a year | 0.30 creator, 0.20 protocol |
 
 ## Risks
 

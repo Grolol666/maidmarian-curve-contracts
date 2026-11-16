@@ -4,7 +4,7 @@ New tokens, each on its own curve. Pick one, buy in early, and watch it fill tow
 
 A token can be launched in one of two modes, picked at the top of the launch page:
 
-- **ETF is SEED**: the token is backed by an ETF made with it.
+- **BASKET is SEED**: the token is backed by a Basket made with it.
 - **STOCKS are SEED**: the token is backed by the stocks themselves.
 
 ![What the reserve holds in each mode](images/v4-vs-v5.svg)
@@ -28,29 +28,29 @@ Open it: [square.ilk.finance/launchpad](https://square.ilk.finance/launchpad)
 - **Holders**: who holds the token.
 - **Claim**: appears only for someone who has fees to claim.
 
-A curve in ETF is SEED mode also shows an **ETF card**: the stocks behind the token, its NAV / share and its TVL. A curve in STOCKS are SEED mode shows a **stocks table** instead: each stock, its weight, how much the curve holds and what that is worth in USDG.
+A curve in BASKET is SEED mode also shows a **Basket card**: the stocks behind the token, its NAV / share and its TVL. A curve in STOCKS are SEED mode shows a **stocks table** instead: each stock, its weight, how much the curve holds and what that is worth in USDG.
 
-# Mode 1: ETF is SEED
+# Mode 1: BASKET is SEED
 
-The token is backed by an ETF created with it. Every buy puts USDG into that ETF's shares, and the curve holds the shares.
+The token is backed by a Basket created with it. Every buy puts USDG into that Basket's shares, and the curve holds the shares.
 
 ### Bonded
 
-When a curve reaches the target the creator picked, it is **bonded**: 30 % of what it holds goes to the protocol, 70 % opens a Uniswap pool, and every token the pool does not take is burned. The token's ETF becomes one pool per stock. The page then shows one pool per stock under the name (SPCX pool, TSLA pool, ...).
+When a curve reaches the target the creator picked, it is **bonded**: 30 % of what it holds goes to the protocol, 70 % opens a Uniswap pool, and every token the pool does not take is burned. The token's Basket becomes one pool per stock. The page then shows one pool per stock under the name (SPCX pool, TSLA pool, ...).
 
 ### Tutorial: launch a token
 
-Open **LAUNCH A TOKEN** and keep **ETF is SEED** picked. The page is numbered 1 to 7.
+Open **LAUNCH A TOKEN** and pick **BASKET is SEED**. The page is numbered 1 to 7.
 
 1. **Your token.** Fill the **Name** (up to 60 characters) and the **Symbol** (up to 8). Pick the **Supply**: 1 million, 10 million, 100 million, 500 million or 1 billion tokens. Set the **Creator tax during the bonding curve** (0 to 10 %). Pick the **Bond target**, from "Mini bond, 100 shares" to "30,000 shares".
 2. **Logo** (optional). **UPLOAD LOGO**: PNG, JPG or SVG, square, 10 KiB max. Without one, the site draws a badge.
-3. **Compose the ETF.** Each leg is a stock your ETF holds, like AAPL at 40 %. Pick a stock, set its percent, press **ADD A LEG**. Up to 10 legs, adding up to 100 %.
-4. **Keeping the ETF in shape.** The **Rebalance band** (0.10 % to 50.00 %, default 2.00 %): a leg is traded when it drifts more than this from its target. The **Rebalance min interval** (0 to 1,440 min, default 1,200 min): the least time between two rebalances.
+3. **Compose the Basket.** Each leg is a stock your Basket holds, like AAPL at 40 %. Pick a stock, set its percent, press **ADD A LEG**. Up to 10 legs, adding up to 100 %.
+4. **Keeping the Basket in shape.** The **Rebalance band** (0.10 % to 50.00 %, default 2.00 %): a leg is traded when it drifts more than this from its target. The **Rebalance min interval** (0 to 1,440 min, default 1,200 min): the least time between two rebalances.
 5. **Social links** (optional). A description (up to 280 characters), X, Telegram, a website, Discord.
 6. **Snipe** (optional). Friends who skip the snipe tax. One address per line, 10 at most.
 7. **Ready?** Read the three lines: every trade pays 0.75 %, 70 % to you and 30 % to the protocol; for its first 3 seconds the curve taxes snipers; what happens at the bond. Enter **Your first buy** (USDG), at least 10 USDG. Press **CONNECT**, then launch.
 
-Launching costs 0.001 ETH, plus your first buy, which mints the first shares of your ETF.
+Launching costs 0.001 ETH, plus your first buy, which mints the first shares of your Basket.
 
 Open it: [square.ilk.finance/launchpad/create](https://square.ilk.finance/launchpad/create)
 
@@ -66,7 +66,7 @@ Open it: [square.ilk.finance/launchpad](https://square.ilk.finance/launchpad)
 
 # Mode 2: STOCKS are SEED
 
-The token is backed by the stocks themselves. The creator picks a basket of 2 to 10 stock tokens, for example three stocks at 40 / 30 / 30 %. There is no ETF in between.
+The token is backed by the stocks themselves. The creator picks a basket of 2 to 10 stock tokens, for example three stocks at 40 / 30 / 30 %. There is no Basket in between.
 
 ## What changes for the buyer
 
@@ -107,7 +107,7 @@ The card under the bar says what share the protocol takes. After the bond, the p
 
 ## Tutorial: launch a token
 
-Open **LAUNCH A TOKEN** and pick **STOCKS are SEED**. The page is numbered 1 to 6.
+Open **LAUNCH A TOKEN** and keep **STOCKS are SEED** picked. The page is numbered 1 to 6.
 
 1. **Your token.** Fill the **Name** (up to 64 characters) and the **Symbol** (up to 11). Pick the **Supply**: 1 million, 10 million, 100 million, 500 million or 1 billion tokens. Set the **Creator tax during the bonding curve** (0 to 10 %). Pick the **Bond target**: 5,000, 8,000, 15,000, 20,000, 25,000 or 30,000 USDG. The curve bonds when its stocks are worth this at their 30 minute average price.
 2. **Logo** (optional). PNG, JPG or SVG, square, 16 KiB max.

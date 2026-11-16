@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-labelledby="t d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
-<title id="t">Buying and selling an ETF</title>
+<title id="t">Buying and selling a Basket</title>
 <desc id="d">Buying: your USDG pays the entry fee, the rest buys the stocks at the basket weights, and you receive shares. Selling: your shares pay the exit fee, the fund sells the stocks for USDG or hands them to you, and you receive the result.</desc>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06110f"/><stop offset="1" stop-color="#0c2a2a"/></linearGradient>
