@@ -46,6 +46,6 @@ The details: [The bond](launchpad.md#the-bond) and [Fees](launchpad.md#fees) on 
 
 Until then, see how a curve works.
 
-Open it: [square.ilk.finance/launchpad](https://square.ilk.finance/launchpad)
+Open it: [maidmarian.app/launchpad](https://maidmarian.app/launchpad)
 
 *Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice.*

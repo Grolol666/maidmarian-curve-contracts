@@ -13,7 +13,7 @@ Two families:
 
 Filter with **all**, **session** or **24/7**. Each card shows the Basket's symbol and name, its entry, exit and management fees, its hold time and early exit, its NAV / share and its TVL. Press **Open**.
 
-Open it: [square.ilk.finance/basket](https://square.ilk.finance/basket)
+Open it: [maidmarian.app/basket](https://maidmarian.app/basket)
 
 ## A Basket
 
@@ -23,7 +23,7 @@ Open it: [square.ilk.finance/basket](https://square.ilk.finance/basket)
 - **Your account**: what you paid in, your average price, your shares, their value now and your PnL. **Exit now** shows the exit fee that would apply to you today.
 - **REBALANCE**: see below.
 
-Open it: [square.ilk.finance/basket/m7m](https://square.ilk.finance/basket/m7m)
+Open it: [maidmarian.app/basket/m7m](https://maidmarian.app/basket/m7m)
 
 ## Rebalance
 
@@ -61,6 +61,6 @@ Press **Create your own Basket** at the top of the list.
 
 The stocks, the percents and the settings are fixed for life. Nobody can change them. You receive the fees.
 
-Open it: [square.ilk.finance/basket/create](https://square.ilk.finance/basket/create)
+Open it: [maidmarian.app/basket/create](https://maidmarian.app/basket/create)
 
 *Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice.*
