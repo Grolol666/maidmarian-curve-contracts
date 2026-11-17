@@ -48,4 +48,4 @@ Until then, see how a curve works.
 
 Open it: [square.ilk.finance/launchpad](https://square.ilk.finance/launchpad)
 
-*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*
+*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice.*

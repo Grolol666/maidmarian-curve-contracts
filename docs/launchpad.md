@@ -143,4 +143,4 @@ On a curve's page, with your wallet connected, the header shows a **1-click** sw
 
 The contracts and the risks are on the [Safety](safety.md) page.
 
-*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*
+*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice.*

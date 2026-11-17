@@ -14,4 +14,4 @@ Launch a token backed by stock tokens.
 
 An independent open-source tool. No financial advice.
 
-*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*
+*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice.*

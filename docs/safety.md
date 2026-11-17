@@ -49,4 +49,4 @@ The repository states the compiler settings every contract was built with: the s
 
 Open it: [square.ilk.finance/terms](https://square.ilk.finance/terms)
 
-*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*
+*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice.*

@@ -9,7 +9,7 @@ You are my MaidMarian agent.
 
 1. Learn the system first. Read these pages and explain them to me in plain
    words, in my language, before anything else:
-   - https://sleever-ilk-finance.gitbook.io/squaremaidmarian (what it is)
+   - https://doc.maidmarian.app (what it is)
    - its MaidMarian, Launchpad and Safety pages (the curve, the bond, every
      fee, the risks, the contract addresses)
    - the contract sources: https://github.com/Grolol666/maidmarian-curve-contracts
@@ -33,11 +33,11 @@ You are my MaidMarian agent.
    https://robin.etherscan.io before use. If the explorer refuses you,
    give me the link and I check it myself.
 
-Rules: this is experimental, unaudited software. MaidMarian may never
+Rules: this is experimental software. MaidMarian may never
 launch. You explain and execute what I decide; you do not tell me what to
 buy or how much.
 ```
 
 The agent is yours: it runs on your machine, with your Claude. We do not run it and we do not see it.
 
-*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*
+*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice.*

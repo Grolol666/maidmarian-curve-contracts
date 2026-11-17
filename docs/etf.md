@@ -63,4 +63,4 @@ The stocks, the percents and the settings are fixed for life. Nobody can change 
 
 Open it: [square.ilk.finance/basket/create](https://square.ilk.finance/basket/create)
 
-*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice. Unaudited.*
+*Experimental software. 100% onchain. Tokens 100% trustless. Not registered funds, not investment advice.*
